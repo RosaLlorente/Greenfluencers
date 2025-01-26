@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/d85fdc58-ea57-4c94-bb2e-f02c42322460)
 
-Ver proyecto/See project: [tienda-store.vercel.app](https://greenfluencers.vercel.app/)
+Ver proyecto/See project: [Greenfluencers.vercel.app](https://greenfluencers.vercel.app/)
 
 <p>The following technologies have been used in this project/En este proyecto se han utilizado las siguientes tecnologías:</p>
 
