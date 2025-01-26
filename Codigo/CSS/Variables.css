@@ -1,0 +1,57 @@
+/*TIPOGRÁFIA*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*VARIABLES*/
+:root{
+    /*Tipografía*/
+    --FuenteTitulo: "Playfair";
+    --FuenteTexto: "Poppins";
+    --FuenteResaltar: "Raleway";
+
+    /*Paleta de colores*/
+    --color--ResaltarMarca: rgba(107, 148, 90, 1);
+    --color--Titulos: rgba(50, 205, 50, 1);
+    --color--TextoMenu: rgba(72, 92, 64, 1);
+    --color--TextoRegistros: rgb(212, 255, 174);
+    --color--TextoCarrousel: rgb(255, 255, 255);
+    --color-EnlacesSinActivar: rgb(79, 87, 75);
+    --color--ResaltarEnlaces: rgb(211, 255, 211);
+    --color-TextoBotonSecundario: rgb(255, 255, 255);
+    --color--TextoFondoOscuro: rgb(255, 255, 255);
+    /*Colores para fondos*/
+    --Fondo--MenuNavegacion: rgba(226, 233, 217, 0.5);
+    --Fondo--ParaModales:  rgba(188, 253, 217, 0.3);
+    --Fondo--Footer: rgb(4, 11, 0);
+    --Fondo--ResaltarEnlaces: rgb(25, 135, 84);
+    --Fondo--Select: rgba(35, 167, 35, 0.5);
+    --Fondo--TextoCarrousel: rgba(0, 11, 0, 0.8);
+    --Fondo--DetalleCarrousel:  rgba(72, 248, 72);
+    --Fondo--Acordeon:rgb(228, 240, 228);
+    --Fondo--Acordeonhover:  rgb(165, 244, 196);
+    --Fondo--Hexagon:  rgba(6, 57, 22, 0.5);
+    --Fondo--SabiasQue: rgba(0, 4, 0, 0.747);
+
+    /*Colores para transparecias*/
+    --Transparencia-Titulos: rgba(0, 0, 0, 0.58);
+    --Transparencia--TitulosCard:  rgb(191, 238, 228);
+
+    /*Colores para sombras*/
+    --Sombra--ItemsFlotantes: rgba(0, 19, 6, 0.5);
+
+    /*Colores para bordes*/
+    --Borde--BotonSecundario: rgb(25, 135, 84);
+
+    /*Color para degradado*/
+    --PrimerDegradado: rgb(45, 100, 51);
+    --SegundoDegradado: rgb(68, 240, 25);
+
+    /*Color celda tabla*/
+    --ColorTabla:rgb(224, 247, 217);
+    --BordeTabla: rgb(1, 30, 4);
+
+    /*Validación*/
+    --Correcto: rgb(17, 255, 0);
+    --FondoCorrecto: rgb(200, 243, 197);
+    --Incorrecto: rgb(255, 0, 0);
+    --FondoIncorrecto: rgb(250, 212, 212);
+}

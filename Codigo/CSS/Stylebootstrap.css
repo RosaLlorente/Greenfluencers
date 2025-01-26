@@ -1,0 +1,220 @@
+@import url('Variables.css');
+
+/*ESTILOS GENERALES*/
+#TiposPlantas .btn-primary, .btn-secondary {
+    color: var(--color-EnlacesSinActivar);
+    transition: all 1s;
+    border-color: transparent;
+}
+.btn-secondary {
+    border-color: var(--Borde--BotonSecundario);
+    color: var(--color-TextoBotonSecundario);
+}
+#TiposPlantas .btn:hover, #IniciarSesion .btn:hover, #Registrarse .btn:hover {
+    color: var(--color--ResaltarEnlaces);
+    background-color: var(--Fondo--ResaltarEnlaces);
+    border-color: var(--Fondo--ResaltarEnlaces);
+    border-radius: 1em;
+}
+#TiposPlantas .btn, #IniciarSesion .btn, #Registrarse .btn {
+    background-color: transparent;
+}
+
+/*MENÚ DE NAVEGACIÓN*/
+.navbar {
+    background-color: var(--Fondo--MenuNavegacion) !important;
+    backdrop-filter: blur(5px) brightness(2);
+    z-index: 1030;
+}
+.navbar-brand {
+    color: var(--color--TextoMenu)!important;
+}
+.nav-link.active:hover{
+    color: var(--color--ResaltarEnlaces);
+}
+.nav-link
+{
+    color: var(--color-EnlacesSinActivar);
+    transition: all 1s;
+}
+.nav-link:hover, .nav-link:focus{
+    color: var(--color--ResaltarEnlaces);
+    background-color: var(--Fondo--ResaltarEnlaces);
+    border-radius: 1em;
+}
+.dropdown-menu {
+    background-color: var(--Fondo--MenuNavegacion);
+}
+.dropdown-item{
+    transition: all 1s;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+    background-color: var(--Fondo--Select);
+}
+.navbar-nav{
+    --bs-scroll-height: 100px;
+}
+
+/*MODALES  DE AUTENTIFICACION*/
+.modal-content{
+    background-color: var(--Fondo--ParaModales);
+    backdrop-filter: blur(10px);
+}
+.modal-title{
+    font-family: var(--FuenteTitulo);
+    color: var(--color--TextoRegistros);
+    font-weight: bold;
+}
+#BotonesLogin .btn-outline-success, #BotonesRegister .btn-outline-success {
+    color: var(--color-TextoBotonSecundario);
+    font-weight: bold;
+    font-family: var(--FuenteResaltar);
+    box-shadow: none;
+}
+label {
+    color: var(--color--TextoRegistros);
+    font-family: var(--FuenteResaltar);
+    font-weight: bold;
+}
+
+/*SECCIÓN SOBRE NOSOTROS*/
+/*Carousel*/
+.carousel-item > img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+.carousel-dark .carousel-caption {
+    color: var(--color--TextoCarrousel);
+    background: var(--Fondo--TextoCarrousel);
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: var(--color--FondoDetalleCarrousel); 
+}
+
+/*Acordeón*/
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    background-color: var(--Fondo--Acordeon);
+    transition: all 1s;
+}
+.accordion-flush .accordion-item .accordion-button:hover, .accordion-flush .accordion-item .accordion-button.collapsed:hover {
+    background-color: var(--Fondo--Acordeonhover);
+}
+.accordion-button
+{
+    color: var(--color--Titulos);
+}
+
+/*TIPO PLANTAS*/
+/*Carousel*/
+#TiposPlantas .carousel-item img {
+    width: 100%;
+    height: 13rem;
+}
+/*Cards*/
+#TiposPlantas .card {
+    width: 18rem; 
+    height: 28em;
+    transition: all 3s;
+}
+#TiposPlantas .card .mx-auto {
+    width: 18rem; 
+    height: 26em;
+}
+#TiposPlantas .card:hover {
+    transform: translateY(-0.5em);
+    box-shadow: 0 4rem 8rem var(--Sombra--ItemsFlotantes);
+}
+/*Botones*/
+#TiposPlantas .btn-primary {
+    color: var(--color-EnlacesSinActivar);
+    transition: all 1s;
+    border-color: transparent;
+}
+#TiposPlantas .btn:hover {
+    color: var(--color--ResaltarEnlaces);
+    background-color: var(--Fondo--ResaltarEnlaces);
+    border-color: var(--Fondo--ResaltarEnlaces);
+    border-radius: 1em;
+}
+#TiposPlantas .btn {
+    background-color: transparent;
+}
+
+/*CUIDADOS BASICOS*/
+/*Modales*/
+#CuidadosBasicos .modal-content {
+    width: 100%;
+    padding: 0.5em;
+}
+#CuidadosBasicos .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--color--TextoFondoOscuro);
+    font-weight: 300;
+    font-style: italic;
+    text-shadow: 2px 1px 0px var(--Sombra--ItemsFlotantes);
+}
+
+/* SECCIÓN JARDINERIA PARA PRINCIPIANTES */
+#Proyecto .bg-light{
+    background-color: var(--Fondo--MenuNavegacion) !important; 
+}
+#Proyecto .list-group-item
+{
+    background-color: var(--Fondo--MenuNavegacion);
+    font-family: var(--FuenteTexto);
+    font-weight: bold;
+    text-align: left;
+}
+#Proyecto .accordion-button {
+    color: var(--color--ResaltarMarca);
+    font-family: var(--FuenteTitulo);
+    font-weight: bold;
+}
+#Proyecto .accordion-body{
+    text-align: left;
+    font-family: var(--FuenteTexto);
+}
+#Beneficios > span{
+    font-size: 1.1em;
+    font-family: var(--FuenteTexto);
+}
+#Beneficios .badge {
+    white-space: unset;
+}
+#Consejos .btn{
+    background-color: var(--Fondo--Hexagon);
+    border-color: var( --Borde--BotonSecundario);
+    transition: all 1.5s;
+}
+#Consejos .btn:hover{
+    box-shadow: 0 4px 1px var(--Sombra--ItemsFlotantes); 
+    transition: all 0.3s ease-in-out;
+}
+#consejos .card-body{
+    background-color: var(--Fondo--MenuNavegacion);
+    font-family: var(--FuenteTexto);
+    color: var(--color--TextoFondoOscuro);
+    font-weight: bold;
+    font-style: italic;
+}
+.table>:not(caption)>*>* {
+    background-color:  var(--ColorTabla);
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: var(--BordeTabla);
+    border-style: groove;
+    border-width: 2px;
+    text-align: left;
+    font-family: var(--FuenteTexto);
+}
+
+/*CONTACTO*/
+.FormularioContacto .btn-primary{
+    background-color: var(--Fondo--ResaltarEnlaces);
+    border: var(--Borde--BotonSecundario);
+}

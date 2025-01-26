@@ -1,0 +1,547 @@
+@import url('Variables.css');
+
+/*ESTILOS GENERALES*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 77px;
+}
+body{
+    font-family: var(--FuenteTexto);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--FuenteTitulo);    
+}
+h3{
+    background-color: var(--Transparencia-Titulos);
+    backdrop-filter: blur(5px);
+    color: var(--color--Titulos);
+    text-align: center;
+    padding: 0.5em;
+}
+h4,.card-title{
+    color: var(--color--Titulos);
+    text-align: center;
+    font-weight: bold;
+}
+.Marca{
+    color: var(--color--ResaltarMarca) !important;
+    font-weight: bold;
+}
+.Logo{
+    width: 3em;
+    height: 3em;
+}
+b{
+    font-family: var(--FuenteResaltar);
+    color: var(--color--ResaltarMarca);
+}
+.linea{
+    width: 99%;
+    height: 1px;
+    background-color: var(--Fondo--Acordeon);
+    margin-bottom: 0.5em;
+}
+
+/*MODALES DE AUTENTIFICACION*/
+.modal-body > .OtrasOpciones
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+.modal-body .OtrasOpciones > a {
+    width: 3em;
+    height: 3em;
+}
+.modal-body  .OtrasOpciones > a > svg {
+    width: 100%;
+}
+aside > p{
+    color: var(--color--TextoFondoOscuro);
+}
+.OtrasOpcionesRegistro{
+    color: var(--color--TextoRegistros);
+    font-weight: bold;
+}
+
+/*SECCIÓN HEROE*/
+#Heroe .Contenido{
+    width: 100%;
+    background-color: var(--Transparencia-Titulos);
+    backdrop-filter: blur(10px) saturate(2) sepia(0.8);
+    padding: 3em;
+}
+.video-bg {
+    object-fit: cover;
+    z-index: -1; 
+}
+.Contenido {
+    z-index: 1; 
+}
+aside p{
+    margin-top: 0.5em;
+    font-size: 0.7em;
+}
+
+/*SECCIÓN SOBRE NOSOTROS*/
+#SobreNosotros{
+    background-image: url("../img/imgDiseño/Fondo1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*Mapa*/
+iframe{
+    height: 13em;
+}
+
+/*SECCIÓN TIPO DE PLANTAS*/
+#TiposPlantas {
+    background-image: url("../img/imgDiseño/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Plataforma {
+    min-height: 100vh;
+}
+#carouselCards {
+    width: 80%;
+}
+#TiposPlantas .card-title {
+    background-color: var(--Transparencia--TitulosCard);
+    border-radius: 0.5rem 0.1rem 0.5rem 0.1rem;
+}
+
+/*SECCIÓN CUIDADOS BASICOS*/
+#CuidadosBasicos{
+    background-image: url("../img/imgDiseño/Fondo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.ContenidoCuidadosBasicos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7em;
+    width: 100%;
+}
+.containerhexagon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5em;
+    margin-right: 4em;
+}
+.Sabiasque{
+    display: flex;
+    flex-direction: column;
+    gap: 15em;
+    height: 100%;
+    width: 50%;
+}
+.Sabiasque div{
+    padding: 0.5rem;
+    background-color: var(--Fondo--SabiasQue);
+    backdrop-filter: blur(10px);
+    color: var(--color--TextoFondoOscuro);
+    font-family: var(--FuenteTexto);
+    transition: all 0.5s;
+}
+.Sabiasque div:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 0 20px var(--Sombra--ItemsFlotantes);
+    border-radius: 1rem 5rem 1rem 5rem;
+    padding: 1.5rem;
+}
+.Sabiasque div p{
+    text-align: left;
+    padding: 0.5em;
+}
+.hexagon {
+    width: 200px; 
+    height: 115.48px; 
+    background-color: var(--Fondo--Hexagon);
+    position: relative;
+    cursor: pointer;
+    transition: all 3s;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent; 
+}
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid var(--Fondo--Hexagon); 
+}
+.hexagon:after {
+    top: 100%;
+    border-top: 57.74px solid var(--Fondo--Hexagon); 
+}
+.hex1{
+    margin-left: 13em;
+}
+.hexText1,.hexText2
+{
+    margin-top: 1.5em;
+    padding: 0.5em;
+    font-family: var(--FuenteResaltar);
+}
+.hex1:hover{
+    transform: translate(1em, 1em) rotate(10deg) scale(1.1);
+}
+.hex2:hover{
+    transform: translate(-1em, 1em) rotate(-10deg) scale(1.1);
+}
+.hexagon h5{
+    color: var(--color--TextoCarrousel);
+    text-shadow: 2px 2px 0px var(--Sombra--ItemsFlotantes);
+}
+
+/*MODALES SECCIÓN CUIDADOS BASICOS*/
+#CuidadosBasicos .ImagenModalCuidados{
+    width:50%;
+    height: 100%;
+}
+#CuidadosBasicos .ImagenModalCuidados > img
+{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+/*SECCIÓN JARDINERIA PARA PRINCIPIANTES*/
+#JardineriaPrincipiantes
+{
+    background: linear-gradient(90deg in oklab, var(--PrimerDegradado), var(--SegundoDegradado));
+    width: 100%;
+}
+#JardineriaPrincipiantes .NombreProyecto   {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+#JardineriaPrincipiantes > .NombreProyecto > h4{
+    background-color: var(--Transparencia-Titulos);
+    width: 30%;
+    padding: 0.5em;
+    border-radius: 1em 1em 1em 1em;
+    text-align: center;
+}
+#Proyecto h5{
+    color: var(--color--TextoFondoOscuro);
+    text-shadow: 2px 1px 0px var(--Sombra--ItemsFlotantes);
+    font-weight: bold;
+    padding: 0.2em;
+}
+#Consejos{
+    margin-left: 35%;
+}
+#Problemas h3{
+    border-radius: 2em;
+}
+
+
+/*SECCIÓN CONTACTO*/
+#Contacto{
+    background-image: url('../img/imgDiseño/Fondo4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+.Contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    padding: 1em;
+}
+.OpcionesContacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: var(--Transparencia-Titulos);
+    padding: 1em;
+    color: var(--color--TextoFondoOscuro);
+}
+.OpcionesContacto > div{
+    display: flex;
+    flex-direction: column;
+}
+.OpcionesContacto > div >  p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.OpcionesContacto > div >  p >  span {
+    width: 2em;
+    height: 2em;
+}
+.ContOpcionesContactoactoClasioco  > div > p > span  > svg {
+    width: 100%;
+}
+.FormularioContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Transparencia-Titulos);
+    color: var(--color--TextoFondoOscuro);
+    padding: 1em;
+}
+
+/*FOOTER*/
+footer{
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    gap: 0.5em;
+    padding: 1em;
+    background-color: var(--Fondo--Footer);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer .Contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color--TextoFondoOscuro);
+}
+.RedesSociales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.RedesSociales a {
+    width: 3em;
+    height: 3em;
+}
+.RedesSociales > a > svg {
+    width: 100%;
+}
+
+/*ESTILOS DE VALIDACIÓN DE FORMULARIOS*/
+input:valid,select:valid {
+    background-color: var(--FondoCorrecto);
+    box-shadow: 5px 0 0px var(--Correcto)}
+input:invalid[required],select[required]:invalid,input:invalid {
+    background-color: var(--FondoIncorrecto);
+    box-shadow: 5px 0 0px var(--Incorrecto);}
+input:not([required]):valid {
+    background-color: var(--FondoCorrecto);
+    box-shadow: 5px 0 0px var(--Correcto);}
+
+
+/*MEDIA QUERYS*/
+@media (max-width: 768px) {
+    /*SECCIÓN CUIDADOS BASICOS*/
+    .ContenidoCuidadosBasicos {
+        flex-direction: column;
+        padding: 2em;
+        gap: 2em;
+    }
+    .containerhexagon{
+        padding: 2em;
+        gap: 2.5em;
+    }
+    .Sabiasque{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        height: 100%;
+    }
+    .hexagon {
+        width: 150px; 
+        height: 86.61px;
+    }
+    .hexagon:before,
+    .hexagon:after {
+        border-left: 75px solid transparent; 
+        border-right: 75px solid transparent; 
+    }
+    .hexagon:before {
+        border-bottom: 43.3px solid var(--Fondo--Hexagon); 
+    }
+    .hexagon:after {
+        border-top: 43.3px solid var(--Fondo--Hexagon); 
+    }
+    
+    .hex1{
+        margin-left: 10em;
+    }
+    .hexagon > h5{
+        font-size: 0.85em;
+    }
+    #CuidadosBasicos .ImagenModalCuidados{
+        width:50%;
+        height: auto;
+    }
+    #CuidadosBasicos .ImagenModalCuidados > img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    /*SECCIÓN JARDINERIA PARA PRINCIPIANTES */
+    #Beneficios .span {
+        font-size: 0.5em; 
+    }
+
+    #Problemas {
+        padding: 1em;
+        gap: 1.5em;
+        overflow-x: auto;
+    }
+
+    .table {
+        width: 100%; 
+        overflow-x: auto; 
+        display: block; 
+    }
+
+    .table th, .table td {
+        padding: 0.8em; 
+        font-size: 0.9em; 
+    }
+
+    .table thead {
+        display: block;
+        position: sticky;
+        top: 0;
+        background-color: #f8f9fa; 
+        z-index: 1;
+    }
+
+    .table tbody {
+        display: block;
+        overflow-y: auto; 
+        max-height: 300px; 
+    }
+    .table tr {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .table th, .table td {
+        flex: 1;
+        text-align: left;
+    }
+
+    /*SECCIÓN CONTACTO*/
+    .OpcionesContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        background-color: var(--Transparencia-Titulos);
+        padding: 1em;
+        color: var(--color--TextoFondoOscuro);
+    }
+    /* FOOTER */
+    footer .Contenido{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+    /*SECCIÓN CUIDADOS BASICOS*/
+    .ContenidoCuidadosBasicos {
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+    }
+    .containerhexagon{
+        padding: 2em;
+        gap: 2.15em;
+    }
+    .hexagon {
+        width: 100px; 
+        height: 57.74px; 
+    }
+    .hexagon:before,
+    .hexagon:after {
+        border-left: 50px solid transparent; 
+        border-right: 50px solid transparent;
+    }
+    .hexagon:before {
+        border-bottom: 28.87px solid var(--Fondo--Hexagon); 
+    }
+    .hexagon:after {
+        border-top: 28.87px solid var(--Fondo--Hexagon); 
+    }
+    .hex1{
+        margin-left: 5em;
+    }
+    .hexagon > h5{
+        font-size: 0.6em;
+    }
+
+    /*SECCIÓN JARDINERIA PARA PRINCIPIANTES */
+    #Problemas {
+        padding: 1em;
+        gap: 1em;
+    }
+    .table th, .table td {
+        padding: 0.6em; 
+        font-size: 0.8em; 
+    }
+    .table thead {
+        font-size: 0.9em; 
+    }
+    .table tr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .table th, .table td {
+        width: 100%; 
+    }
+    .table {
+        overflow-x: auto;
+        display: block;
+    }
+
+    /*SECCIÓN CONTACTO*/
+    .OpcionesContacto{
+        flex-direction: column;
+        gap: 1em;
+        padding: 0.5em;
+    }
+    
+    /*FOOTER*/
+    footer .Contenido{
+        flex-direction: column;
+    }
+}
