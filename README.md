@@ -1,6 +1,6 @@
 <h1>Screen output/Salida de pantalla</h1>
 
-![image](https://github.com/user-attachments/assets/d85fdc58-ea57-4c94-bb2e-f02c42322460)
+![image](https://github.com/user-attachments/assets/336159a8-afe8-4eb8-906d-84de7a13273e)
 
 Ver proyecto/See project: [Greenfluencers.vercel.app](https://greenfluencers.vercel.app/)
 
